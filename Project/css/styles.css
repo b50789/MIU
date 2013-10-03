@@ -78,7 +78,23 @@ h1 {
 	font-weight: bolder; 
 	
 }
+.btitle{
+	text-align: center;
 
+}
+.browse {
+	margin-left:auto;
+	margin-right:auto;	
+	padding: 2px;
+	border: 2px solid rgba(0,0,0,1);
+	background: -webkit-linear-gradient(rgba(211,217,217,0.95) 10.28%, #ffffff 100%);
+	width:275px;
+	text-align: center;
+	text-transform: uppercase;
+	font: 14px xx-large;
+	font-weight: bolder; 
+	
+}
 .formtitle{
 	color: rgba(220,238,238,0.98);
 	font: 15px xx-large;
