@@ -1,7 +1,7 @@
 /* 
-	Project 3 Web App
+	Project 1
 	Adam Carlton
-	VFW1309
+	MIU 1310
 */
 
 html {
@@ -78,8 +78,32 @@ h1 {
 	font-weight: bolder; 
 	
 }
-.btitle{
+
+.searchfield{
+	margin-left:auto;
+	margin-right:auto;
 	text-align: center;
+	border: 2px solid rgba(0,0,0,1);
+	width:260px;
+
+}
+.soon{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	border: 2px solid rgba(0,0,0,1);
+	width:260px;
+	background: -webkit-linear-gradient(rgba(211,217,217,0.95) 10.28%, #f37029 100%);
+
+}
+.btitle{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid rgba(0,0,0,1);
+	background: -webkit-linear-gradient(rgba(211,217,217,0.95) 10.28%, #f37029 100%);
+	width:300px;
 
 }
 .browse {
@@ -89,9 +113,8 @@ h1 {
 	border: 2px solid rgba(0,0,0,1);
 	background: -webkit-linear-gradient(rgba(211,217,217,0.95) 10.28%, #ffffff 100%);
 	width:275px;
-	text-align: center;
-	text-transform: uppercase;
-	font: 14px xx-large;
+	text-align: left;
+	font: 14px;
 	font-weight: bolder; 
 	
 }
