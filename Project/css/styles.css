@@ -78,15 +78,23 @@ h1 {
 	font-weight: bolder; 
 	
 }
+input [type="submit"] {
+	margin-left: 5px;
+	width: 75px;
+	height: 23px;
+	border: none;
+	background-color: steelblue;
+	color: white;
 
-.searchfield{
+}
+/*.searchfield{
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
 	border: 2px solid rgba(0,0,0,1);
 	width:260px;
 
-}
+}*/
 .soon{
 	margin-left:auto;
 	margin-right:auto;
@@ -107,13 +115,15 @@ h1 {
 
 }
 .browse {
+	display: block;
 	margin-left:auto;
 	margin-right:auto;	
 	padding: 2px;
 	border: 2px solid rgba(0,0,0,1);
+	border-radius: 10px;
 	background: -webkit-linear-gradient(rgba(211,217,217,0.95) 10.28%, #ffffff 100%);
 	width:275px;
-	text-align: left;
+	text-align: center;
 	font: 14px;
 	font-weight: bolder; 
 	
