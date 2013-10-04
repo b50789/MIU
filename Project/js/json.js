@@ -140,7 +140,7 @@ var json = {
 		"date":["Date:", "2013-12-29"],
 		"showname":["Show Name:", "The New Year Show"],
 		"r_yes":["Recurring Show:", "Yes"],
-		"networks":["'Network:", "CBS"],
+		"networks":["'Network:", "Hulu"],
 		"important":["How Important?", "100"],
 		"block_yes":["Parental Block Needed?", "Yes"],
 		"specialnotes":["Notes:", "Another Great TV Show"],
@@ -170,7 +170,7 @@ var json = {
 		"date":["Date:", "2014-12-15"],
 		"showname":["Show Name:", "The Fake Show"],
 		"r_yes":["Recurring Show:", "Yes"],
-		"networks":["'Network:", "CBS"],
+		"networks":["'Network:", "Disney Channel"],
 		"important":["How Important?", "100"],
 		"block_yes":["Parental Block Needed?", "Yes"],
 		"specialnotes":["Notes:", "Another Great TV Show"],
@@ -180,7 +180,7 @@ var json = {
 		"date":["Date:", "2015-09-29"],
 		"showname":["Show Name:", "The Fullsail Show"],
 		"r_yes":["Recurring Show:", "Yes"],
-		"networks":["'Network:", "CBS"],
+		"networks":["'Network:", "FOX"],
 		"important":["How Important?", "100"],
 		"block_yes":["Parental Block Needed?", "Yes"],
 		"specialnotes":["Notes:", "Another Great TV Show"],
@@ -200,10 +200,10 @@ var json = {
 		"date":["Date:", "2013-12-12"],
 		"showname":["Show Name:", "The Last Data"],
 		"r_yes":["Recurring Show:", "Yes"],
-		"networks":["'Network:", "CBS"],
+		"networks":["'Network:", "Netflix"],
 		"important":["How Important?", "100"],
 		"block_yes":["Parental Block Needed?", "Yes"],
-		"specialnotes":["Notes:", "Another Great TV Show"],
+		"specialnotes":["Notes:", "Another Great TV Show"]
 
 	}
 
