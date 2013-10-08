@@ -182,11 +182,11 @@ window.addEventListener("DOMContentLoaded", function(){
 		//Populate the form fields w/current localStorage values.
 		$('date').value = item.date[1];
 		$('showname').value = item.showname[1];
-		var radios0 = document.forms[0].sex;
+		var radios0 = document.forms[0].repeat;
 		for(var i=0; i<radios0.length; i++) {
-			if(radios0[i].value == "Male" && item.sex[1] == "Male"){
+			if(radios0[i].value == "Male" && item.repeat[1] == "Male"){
 				radios0[i].setAttribute("checked", "checked");
-			}else if(radios0[i].value == "Female" && item.sex[1] == "Female"){
+			}else if(radios0[i].value == "Female" && item.repeat[1] == "Female"){
 				radios0[i].setAttribute("checked", "checked");
 			}
 		}
@@ -255,7 +255,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			messageAry.push(showNetworkError);
 		}
 
-		//If there are eror, display them.
+		//If there are error, display them.
 		if(messageAry.length >= 1){
 			for(var i=0, j=messageAry.length; i < j; i++){
 				var txt = document.createElement('li');
