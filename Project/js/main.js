@@ -13,13 +13,13 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	// Create select field element and populate with options
-	/*var saveShow = function (){
+	/*var saveShow = function (){/*
 		localStorage.setItem("test1", "hello1");
 		localStorage.setItem("test2", "hello2");
 		localStorage.setItem("test3", "hello3");
-		alert(localStorage.key);*/
+		alert(localStorage.key);
 		
-		
+		}*/
 		
 	//Find value of selected radio buttons
 	function getSelectedRadio0(){
@@ -62,11 +62,14 @@ window.addEventListener("DOMContentLoaded", function(){
 		//If there is no key, this means this is a brand new item and we need a new key
 		if(!key){
 			var id		= Math.floor(Math.random()*100000002);
+
 		}else{
 			//Set the id to the existing key we're editing so that it will save over the data.
 			//The key is the same key that's been passed along from the editSubmit event handler
 			//to the validate function, and then passed here, into the saveShow function.
 			id = key;
+
+			//console.log(id);
 		}
 		//Gather up all our form values and store in an object
 		//Object properties contain array with the form label and input value.
@@ -125,6 +128,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 
 	//Add TV Network Images
+
 	function showImg(fileName, makeSubList){
 		var imageLi = document.createElement("li");
 		makeSubList.appendChild(imageLi);
@@ -176,6 +180,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
 
+
 		//Show the form
 		toggleControls("off");
 
@@ -204,6 +209,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		//so we can use that value when we save the data we edited.
 		editSubmit.addEventListener("click", validate);
 		editSubmit.key = this.key;
+
+
 	}
 
 	function deleteItem(){
@@ -232,43 +239,51 @@ window.addEventListener("DOMContentLoaded", function(){
 	function validate(e){
 		// Define the elements we want to check
 		var getShowname = $('showname');
-		var getNetworks = $('networks');
+		/*var getNetworks = $('networks');*/
 
 		//Reset Error Messages
 		errMsg.innerHTML = "";
 		getShowname.style.border = "1px solid black";
-		getNetworks.style.border = "1px solid black";
+		//getNetworks.style.border = "1px solid black";
 
 
 		//Get Error Messages
 		var messageAry = [];
 		//Show Name Validation
-		if(getShowname.value === ""){
+		if(getShowname.value==""){
 			var showNameError = "Please Add a Show Name.";
 			getShowname.style.border = "1px solid red";
 			messageAry.push(showNameError);
 		}
 		//Networks Validation
-		if(getNetworks.value === "--Pick One--"){
-			var showNetworkError = "Please Add a Network.";
-			getNetworks.style.border = "1px solid red";
-			messageAry.push(showNetworkError);
-		}
+		//if(getNetworks.value=="--Pick One--"){
+			//var showNetworkError = "Please Add a Network.";
+			//getNetworks.style.border = "1px solid red";
+			//.push(showNetworkError);
+		//}
 
 		//If there are error, display them.
 		if(messageAry.length >= 1){
 			for(var i=0, j=messageAry.length; i < j; i++){
 				var txt = document.createElement('li');
 				txt.innerHTML = messageAry[i];
+				//$('errors').appendChild(txt);
 				errMsg.appendChild(txt);
-
 			}
-			e.preventDefault();
-			return false;
-		}else{
+
+		
+		e.preventDefault();
+		return false;
+
+	}else{
 			//If all is ok, save our data! Send the key value (which came from the edit data function).
-			//Remember this Key value was passwed through the editSubmit event listener as a property.
+			//Remember this Key value was passed through the editSubmit event listener as a property.
+			
 			saveShow(this.key);
+			window.location.reload();
+
+
+
 		}
 		
 
