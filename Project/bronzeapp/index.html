@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Project 1 -->
+<!-- Project 2 Gold App -->
 <!-- Adam Carlton -->
 <!-- MIU 1310 -->
 
@@ -14,43 +14,98 @@
 	<meta name="viewport" content="user-scalable=no, width=device-width" /> 
 	<meta name="viewport" content="width=320,user-scalable=no" />
 	<meta name="HandheldFriendly" content="true" />
-	<link href="css/styles.css" rel="stylesheet" />
+	<!--link href="css/styles.css" rel="stylesheet" /-->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 
 	<title>DVR Watch List</title>
 </head>
 
 <body>
 	<header>
+		<div data-role="header" data-theme="a">
+    		<h1>DVR Watch List</h1>
+		</div>
 		<p>
-			<a href="additem.html" itemprop="url"><img src="img/remote.png" id="myRemote" class="img1"></a>
+			<center><a href="additem.html" itemprop="url" rel="external"><img src="img/cta.png
+			" id="myRemote" class="img1"></a></center>
 		</p>
 		
 	</header>
 
 	<div>
 	
-		<p class="indexd">Go Ahead add that TV Show
-		<br>to your very own DVR Watch List</p>
+		<p class="indexd"><center>Go Ahead add that TV Show
+		<br>to your very own DVR Watch List</center></p>
 	
 	
-	<div class="searchfield">
+	<!--<div class="searchfield">
 		<center>
 			<input type="text" name="input" value="Show Name Here">
-			<input type="submit" value="Search Show"></center></div>
-			<!-- Search -->
+			<input type="submit" value="Search Show"></center></div> -->
+			
+
 
 	<div>
-		<p class="btitle">Browse:</p>
-		<p class="browse"><a href="tvshow.html">by TV Shows</a></p>
-		<p class="browse"><a href="movies.html">by Movies</a></p>
-		<p class="browse"><a href="networks.html">by Networks</a></p>
-		<p class="browse"><a href="date.html">by Date</a></p>
-		<p class="browse"><a href="soon.html">by Starting Soon</a></p>
-	</div>
+		<!-- Search -->
+		<!--ul data-role="listview" data-filter="true" data-filter-placeholder="Search..." data-inset="true"><br / -->
+		
+		<!--<a href="tvshow.html" data-role="button" data-icon="bars" data-iconpos="left" data-theme="a" data-inline="true">by TV Shows</a> -->
+
+		<!--	<li><a href="tvshow.html" data-role="button" data-icon="bars" data-iconpos="left" data-theme="a" data-inline="true">by TV Shows</a></li>
+			<li><a href="networks.html">by Networks</a></li>
+			<li><a href="date.html">by Date</a></li>
+		</ul>
+	</div> -->
 
 
-	
-	<p class="footer"> <small>Adam Carlton &copy; 2013</small></p>
+
+
+
+
+
+<div class="content-primary">	
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Search..." data-inset="true"><br />
+			<div data-role="controlgroup">
+			<a href="#" data-role="button">Browse:</a>
+		</div>
+			<li><a href="tvshow.html"  rel="external">
+				<img src="img/tv2.jpg" /> <!--http://creativecommons.org/licenses/by/2.0/ , http://www.flickr.com/photos/lge/3464536794/sizes/t/in/photolist-6h9E61-6ksd9Y-6mV9Kn-6p7wGs-6pMZcQ-6waxcv-6weJFb-6MbU61-6NGCgm-6NGCjA-6NGCLN-749s66-7mhNUH-7npyuL-873tMT-9pZTtn-99QhXu-99LCpt-7AiUYg-eLV7e4-dcuWv2-dfNacL-cydTq3-dK8FeX-ddGaBc-cu3EmS-dycZ9n-dJv2Tk-dMipjH-dzXsfr-cvJwz7-dbAZ9e-bLRwAM-ePfgTj-diLjcB-d9wq7y-foDTmf-gteXpo-evdbKE-dH7xZ4-fpGpUB-e65DwG-cZrFCb-d1a1im-fqyAqJ-8UfuWs-cJ2qUh-8U9PFc-9DSos5-e57JQn-9DSin8/-->
+				<h3>by TV Shows</h3>
+				<!--p>Broken Bells</p -->
+			</a></li>
+			<li><a href="networks.html" rel="external">
+				<img src="img/tv2.jpg" />
+				<h3>by Networks</h3>
+				
+			</a></li>
+			<li><a href="date.html" rel="external">
+				<img src="img/tv2.jpg" />
+				<h3>by Date</h3>
+				
+			</a></li>
+		</ul>
+		</div><!--/content-primary -->	
+
+
+
+
+<br />
+	<div data-role="footer" data-id="foo1" data-position="fixed">
+		<div data-role="navbar">
+
+			<ul>
+				<li><a href="#" data-icon="home" rel="external">Home</a></li>
+				<li><a href="additem.html" data-icon="plus" rel="external">Add Show</a></li>
+				<li><a href="about.html" data-icon="info" rel="external">About</a></li>
+				<li><a href="news.html" data-icon="alert" rel="external">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+
+	<p class="footer"> <center><small>Adam Carlton &copy; 2013</small></center></p>
 	</div>
 
 </body>
