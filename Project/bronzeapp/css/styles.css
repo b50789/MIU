@@ -5,7 +5,7 @@
 */
 
 html {
-	background-color: rgba(70,99,71,0.86);
+	background-color: #c3c3c3;
 	
 }
 
@@ -26,7 +26,7 @@ html {
 }
 
 .indexd{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
@@ -35,7 +35,7 @@ html {
 }
 
 .indexp{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
@@ -59,7 +59,7 @@ html {
 
 .footer{
 	text-align: center;
-	color: #f37029;
+	color: black;
 	text-decoration: !important;
 }
 
@@ -129,7 +129,7 @@ input [type="submit"] {
 	
 }
 .formtitle{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
@@ -139,42 +139,42 @@ input [type="submit"] {
 
 
 .date{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
 	
 }
 .name{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
 	
 }
 .rshow{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
 	
 }
 .net{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
 	
 }
 .personal{
-	color: rgba(220,238,238,0.98);
+	color: rblack;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
 	
 }
 .parental{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
@@ -182,7 +182,7 @@ input [type="submit"] {
 }
 
 .specialn{
-	color: rgba(220,238,238,0.98);
+	color: black;
 	font: 15px xx-large;
 	font-weight: bolder;
 	line-height: !important;
