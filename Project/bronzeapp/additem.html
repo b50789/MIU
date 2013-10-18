@@ -27,9 +27,12 @@
 			<legend class="formtitle">Add a TV Show/Movie</legend>
 			<ul id="errors"></ul>
 			<ul>
-				<li class="date"><label for="date">Show Starts:</label><input type="date" id="date" /></li>
-				<li class="name"><label for="showname">Show Name:</label><input type="text" id="showname" /></li>
+				<li class="date"><label for="date">Show Starts:</label><input type="date" id="date" />
+					<p class="hints">example: "10/31/2013"</p></li>
+				<li class="name"><label for="showname">Show Name:</label><input type="text" id="showname"  placeholder="The TV Title Show" /></li>
+					<p class="hints">example: "The Walking Dead"</p>
 				<li class="rshow">Recurring Show:
+					<p class="hints">Would this show air on a weekly basic?</p>
 							<br>
 					<input type="radio" id="r_yes" name="repeat" value="Yes" />
 						<label>Yes</label>
@@ -57,7 +60,9 @@
 							<option>other</option>
 						</select>
 				</li>
-				<li class="personal"><label for="important">How Important Is This Show To You:</label><br><input type="range" id="important" /></li>
+				<li class="personal"><label for="important">How Important Is This Show To You:</label>
+					<p class="hints">On a scale from 1 to 10</p>
+					<br><input type="range" id="important" /></li>
 				<li class="parental">Does This Show Need A Parental Block:
 							<br>
 					<input type="radio" id="block_yes" name="add" value="Yes" />
@@ -72,7 +77,10 @@
 			</ul>
 
 		</fieldset>
-		<input type="button" id="submit" value="Save Show" />
+		<div class="save">
+			<input type="button" id="submit" value="Save Show"  /><br />
+			<input type="button" id="reset" value="Reset Show" />
+		</div>
 
 	</form>
 		<br>

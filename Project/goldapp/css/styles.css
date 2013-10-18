@@ -3,10 +3,36 @@
 	Adam Carlton
 	MIU 1310
 */
-
+/*
 html {
 	background-color: #c3c3c3;
 	
+}*/
+label.error {
+	display: block;
+	margin: 10px 0;
+	color: #f81a21;
+}
+
+.spacing {
+	display: block;
+	margin-top: 45px;
+}
+
+.reclabel{
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.hints {
+	text-align: center;
+	font-size: 12px;
+	font-style: italic;
+	color: blue;
+
+}
+.hideme{
+	display: none;
 }
 
 .mainlink{
@@ -64,7 +90,7 @@ html {
 }
 
 
-
+/*
 h1 {
 	margin-left:auto;
 	margin-right:auto;	
@@ -95,6 +121,7 @@ input [type="submit"] {
 	width:260px;
 
 }*/
+
 .soon{
 	margin-left:auto;
 	margin-right:auto;
