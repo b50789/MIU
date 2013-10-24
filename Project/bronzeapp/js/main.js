@@ -239,12 +239,13 @@ window.addEventListener("DOMContentLoaded", function(){
 	function validate(e){
 		// Define the elements we want to check
 		var getShowname = $('showname');
-		/*var getNetworks = $('networks');*/
+		var getNetworks = $('networks');
+		var getDate = $('date');
 
 		//Reset Error Messages
 		errMsg.innerHTML = "";
 		getShowname.style.border = "1px solid black";
-		//getNetworks.style.border = "1px solid black";
+		getNetworks.style.border = "1px solid black";
 
 
 		//Get Error Messages
@@ -255,12 +256,18 @@ window.addEventListener("DOMContentLoaded", function(){
 			getShowname.style.border = "1px solid red";
 			messageAry.push(showNameError);
 		}
+		//Date Validation
+		if(getDate.value==""){
+			var getDateError = "Please Add a Date.";
+			getDate.style.border = "1px solid red";
+			messageAry.push(getDateError);
+		}
 		//Networks Validation
-		//if(getNetworks.value=="--Pick One--"){
-			//var showNetworkError = "Please Add a Network.";
-			//getNetworks.style.border = "1px solid red";
-			//.push(showNetworkError);
-		//}
+		if(getNetworks.value=="no network"){
+			var showNetworkError = "Please Add a Network.";
+			getNetworks.style.border = "1px solid red";
+			messageAry.push(showNetworkError);
+		}
 
 		//If there are error, display them.
 		if(messageAry.length >= 1){

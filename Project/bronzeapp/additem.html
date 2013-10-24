@@ -25,11 +25,12 @@
 	<form action="#" method="post" id="tvForm" />
 		<fieldset>
 			<legend class="formtitle">Add a TV Show/Movie</legend>
-			<ul id="errors"></ul>
+			<ul class="red">* = Required</ul>
+			<ul id="errors" class="red"></ul>
 			<ul>
-				<li class="date"><label for="date">Show Starts:</label><input type="date" id="date" />
+				<li class="date"><label for="date"><FONT COLOR="red">*</FONT>Show Starts:</label><input type="date" id="date" />
 					<p class="hints">example: "10/31/2013"</p></li>
-				<li class="name"><label for="showname">Show Name:</label><input type="text" id="showname"  placeholder="The TV Title Show" /></li>
+				<li class="name"><label for="showname"><FONT COLOR="red">*</FONT>Show Name:</label><input type="text" id="showname"  placeholder="The TV Title Show" /></li>
 					<p class="hints">example: "The Walking Dead"</p>
 				<li class="rshow">Recurring Show:
 					<p class="hints">Would this show air on a weekly basic?</p>
@@ -41,9 +42,9 @@
 						<label>No</label>
 				</li>
 				<li id="select" class="net">
-					<label for="networks">Networks:</label>
+					<label for="networks"><FONT COLOR="red">*</FONT>Networks:</label>
 						<select id="networks">
-							<option value="no network" selected disabled>--Pick One--</option>
+							<option value="no network" selected disabled>Choose</option>
 							<option>ABC</option>
 							<option>AMC</option>
 							<option>AETV</option>
