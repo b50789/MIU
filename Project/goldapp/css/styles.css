@@ -3,11 +3,12 @@
 	Adam Carlton
 	MIU 1310
 */
-/*
-html {
-	background-color: #c3c3c3;
-	
-}*/
+
+
+
+.leftlogo {
+	margin: left;
+}
 label.error {
 	display: block;
 	margin: 10px 0;
